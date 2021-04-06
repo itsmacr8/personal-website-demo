@@ -1,0 +1,149 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+html{
+font-size: 10px;
+scroll-behavior: smooth;
+}
+body{
+font-size: 1.6rem;
+}
+/* REUSEABLE STYLES START*/
+.subtext{
+color: black;
+font-size: 1.8rem;
+}
+.role{
+color: #48c1e9;
+font-size: 1.6rem;
+margin-bottom: 1rem;
+}
+
+.heading-text::after{
+content: "";
+display:block;
+height: .4rem;
+background-color: black;
+width: 8.5rem;
+margin :1rem auto;
+}
+.heading-text{
+font-size: 4rem;
+color: black;
+text-transform: uppercase;
+
+}
+.heading-subtext{
+color: black;
+font-size: 1.8rem;
+width: 60%;
+margin-left: 20%;
+margin-bottom: 5rem;
+}
+.template-text{
+color: black;
+font-size: 2.4rem;
+margin-bottom: 1rem;
+text-transform: uppercase;
+}
+.btn{
+color: #fff;
+font-size: 1.8rem;
+padding: 2rem 6rem;
+cursor: pointer;
+background-color: #eb7d4b;
+border: none;
+margin-top: 5rem;
+}
+.container{
+padding: 12rem 0;
+margin: 0 10rem;
+text-align: center;
+}
+
+/* REUSEABLE STYLES END*/
+
+
+
+.home-section{
+height: 65vh;
+background: linear-gradient(#87509c56,#87509c56), url("../img/nyc.jpg") no-repeat;
+background-size: cover;
+}
+
+.home-section .container{
+padding: 0;
+}
+.home-section .heading-text::after{
+display: none;
+}
+.home-section .heading-text{
+text-transform: none;
+}
+.text-area{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 51vh;
+}
+/* HAMBERGER SECTION START*/
+.hamberger-menu{
+display: none;
+position: absolute;
+right: 7.5rem;
+top: 3.5rem;
+cursor: pointer;
+}
+.hamberger-menu .btn-line{
+width: 3.5rem;
+height: .5rem;
+background-color: #fff;
+}
+.hamberger-menu .btn-line:nth-child(2){
+margin: .5rem 0;
+}
+
+.active{
+display: block !important;
+position: absolute;
+display: inline-block;
+right: 0%;
+background-color: black;
+padding: 20px;
+top: 6%;
+}
+
+/* HAMBERGER SECTION END */
+
+.navbar{
+display: flex;
+justify-content: space-between;
+}
+.menu-brand{
+margin: 3rem 0;
+color: #fff;
+}
+.menu-brand h2 a{
+text-decoration: none;
+}
+
+.navigation-items{
+display: flex;
+margin: 3rem 0;
+}
+.navigation-items li{
+list-style: none;
+text-transform: uppercase;
+}
+.navigation-items li a{
+text-decoration: none;
+font-size: 2.5rem;
+color: #fff;
+padding: 1rem;
+}
+.navigation-items li a:hover{
+background-color: #643a79;
+}
