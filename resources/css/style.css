@@ -148,3 +148,24 @@ padding: 1rem;
 background-color: #643a79;
 }
 
+/* SERVICE SECTION */
+.service-section{
+    background: linear-gradient(#17c2a354,#17c2a350), url("../img/services.jpg") no-repeat right bottom;
+    background-size: cover;
+  }
+  
+  .service-section .heading-text::after{
+    background-color: #14a58c;
+  }
+  
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  
+  .our-work .crayon , .our-work .rocket{
+    margin-bottom: 2.5rem;
+  }
+  .our-work .flag , .our-work .gears{
+    margin-bottom: 3rem;
+  }
