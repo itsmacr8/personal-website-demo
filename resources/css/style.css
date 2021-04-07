@@ -224,3 +224,95 @@ background-color: #643a79;
   -ms-transform: rotate(360deg);
   -o-transform: rotate(360deg);
 }
+
+/* SKILL SECTION */
+
+.skill-section{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/skill.jpg") no-repeat;
+  background-size: cover;
+}
+.skill-section .heading-text{
+  color: #fff;
+}
+.skill-section .template-text{
+  color: #fff;
+}
+.skill-section .heading-subtext{
+  color: #fff;
+}
+.skill-section .heading-text::after{
+  background-color: #dfe8eda8;
+}
+
+
+/* RADIAL PROGRESSBAR PLUGIN CSS */
+/* 2. The primary CSS styles for the radial progress bar. */
+svg.radial-progress {
+  height: auto;
+  max-width: 200px;
+  padding: 1em;
+  transform: rotate(-90deg);
+  width: 100%;
+}
+svg.radial-progress circle {
+  fill: rgba(0, 0, 0, 0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129; 
+  stroke-width: 7;
+}
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+svg.radial-progress text {
+  fill: #fff;
+  text-anchor: middle;
+}
+
+/* 3. Apply your own color to the circle. */
+.html-css svg.radial-progress circle { stroke: #30bae7; }
+.web-design svg.radial-progress circle { stroke: #d74680; }
+.graphic-design svg.radial-progress circle { stroke: #15c7a8; }
+.ui-ux svg.radial-progress circle { stroke: #eb7d4b; }
+
+/* PORTFOLIO SECTION */
+
+.portfolio-section{
+  background-color: #ffdd99;
+}
+.portfolio-section .template-text{
+  color: #3c4761;
+}
+.portfolio-section .heading-subtext{
+  color: #535e75;
+}
+.portfolio-section .heading-text::after{
+  background-color: #e5c37f;
+}
+
+.portfolio-section .btn{
+  background-color: #17c2a4;
+}
+
+.grid-of-two-column{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+}
+.grid-of-two-column .portfolio-image{
+  width: 100%;
+}
+.button-filter{
+  margin-bottom: 5rem;
+}
+.button-filter .mixitup-control-active{
+  background-color: #fff;
+}
+.button-filter button{
+  padding: 1rem 4rem;
+  border: none;
+  background-color: #ebc985;
+  color: #393939;
+  cursor: pointer;
+}
+.button-filter button:hover{
+  box-shadow: inset 0 .3rem .5rem rgba(60,71,97,.5)
+}
