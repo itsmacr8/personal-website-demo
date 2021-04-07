@@ -169,3 +169,58 @@ background-color: #643a79;
   .our-work .flag , .our-work .gears{
     margin-bottom: 3rem;
   }
+
+  /* TEAM SECTION */
+.team-section{
+  background-color: #e7f1f8;
+  background: linear-gradient(#7e96a7d0,#446379bb), url("../img/team.jpg") no-repeat;
+  background-size: cover;
+}
+
+.team-section img{
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+  margin-bottom: 1rem;
+}
+
+.social-icons{
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.social-icons a{
+  color: black;
+}
+
+.social-icons a i::before{
+  background-color: #bdd1df;
+  width: 2rem;
+  height: 2rem;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+  display:inline-block;   /*sudu class use korle display inline block use korte hoy na korle width & height kaj korena.*/
+  padding: 1rem;
+  font-size: 2rem;
+  transition: .7s;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -ms-transition: .7s;
+  -o-transition: .7s;
+}
+
+.social-icons a:hover i::before{
+  background-color: #393939;
+  color: #fff;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
