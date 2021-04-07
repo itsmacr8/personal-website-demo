@@ -1,176 +1,175 @@
 *{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 html{
-font-size: 10px;
-scroll-behavior: smooth;
+  font-size: 10px;
+  scroll-behavior: smooth;
 }
 body{
-font-size: 1.6rem;
+  font-size: 1.6rem; 
 }
+
 /* REUSEABLE STYLES START*/
 .subtext{
-color: black;
-font-size: 1.8rem;
+  color: black;
+  font-size: 1.8rem;
 }
 .role{
-color: #48c1e9;
-font-size: 1.6rem;
-margin-bottom: 1rem;
+  color: #48c1e9;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .heading-text::after{
-content: "";
-display:block;
-height: .4rem;
-background-color: black;
-width: 8.5rem;
-margin :1rem auto;
+  content: "";
+  display:block;
+  height: .4rem;
+  background-color: black;
+  width: 8.5rem;
+  margin :1rem auto;
 }
 .heading-text{
-font-size: 4rem;
-color: black;
-text-transform: uppercase;
+  font-size: 4rem;
+  color: black;
+  text-transform: uppercase;
 
 }
 .heading-subtext{
-color: black;
-font-size: 1.8rem;
-width: 60%;
-margin-left: 20%;
-margin-bottom: 5rem;
+  color: black;
+  font-size: 1.8rem;
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 5rem;
 }
 .template-text{
-color: black;
-font-size: 2.4rem;
-margin-bottom: 1rem;
-text-transform: uppercase;
+  color: black;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 .btn{
-color: #fff;
-font-size: 1.8rem;
-padding: 2rem 6rem;
-cursor: pointer;
-background-color: #eb7d4b;
-border: none;
-margin-top: 5rem;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 2rem 6rem;
+  cursor: pointer;
+  background-color: #eb7d4b;
+  border: none;
+  margin-top: 5rem;
 }
 .container{
-padding: 12rem 0;
-margin: 0 10rem;
-text-align: center;
+  padding: 12rem 0;
+  margin: 0 10rem;
+  text-align: center;
 }
 
 /* REUSEABLE STYLES END*/
 
-
-
 .home-section{
-height: 65vh;
-background: linear-gradient(#87509c56,#87509c56), url("../img/nyc.jpg") no-repeat;
-background-size: cover;
+  height: 65vh;
+  background: linear-gradient(#87509c56,#87509c56), url("../img/nyc.jpg") no-repeat;
+  background-size: cover;
 }
 
 .home-section .container{
-padding: 0;
+  padding: 0;
 }
 .home-section .heading-text::after{
-display: none;
+  display: none;
 }
 .home-section .heading-text{
-text-transform: none;
+  text-transform: none;
 }
 .text-area{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: 51vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 51vh;
 }
 /* HAMBERGER SECTION START*/
 .hamberger-menu{
-display: none;
-position: absolute;
-right: 7.5rem;
-top: 3.5rem;
-cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 7.5rem;
+  top: 3.5rem;
+  cursor: pointer;
 }
 .hamberger-menu .btn-line{
-width: 3.5rem;
-height: .5rem;
-background-color: #fff;
+  width: 3.5rem;
+  height: .5rem;
+  background-color: #fff;
 }
 .hamberger-menu .btn-line:nth-child(2){
-margin: .5rem 0;
+  margin: .5rem 0;
 }
 
 .active{
-display: block !important;
-position: absolute;
-display: inline-block;
-right: 0%;
-background-color: black;
-padding: 20px;
-top: 6%;
+  display: block !important;
+  position: absolute;
+  display: inline-block;
+  right: 0%;
+  background-color: black;
+  padding: 20px;
+  top: 6%;
 }
 
 /* HAMBERGER SECTION END */
 
 .navbar{
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .menu-brand{
-margin: 3rem 0;
-color: #fff;
+  margin: 3rem 0;
+  color: #fff;
 }
 .menu-brand h2 a{
-text-decoration: none;
+  text-decoration: none;
 }
 
 .navigation-items{
-display: flex;
-margin: 3rem 0;
+  display: flex;
+  margin: 3rem 0;
 }
 .navigation-items li{
-list-style: none;
-text-transform: uppercase;
+  list-style: none;
+  text-transform: uppercase;
 }
 .navigation-items li a{
-text-decoration: none;
-font-size: 2.5rem;
-color: #fff;
-padding: 1rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 1rem;
 }
 .navigation-items li a:hover{
-background-color: #643a79;
+  background-color: #643a79;
 }
 
 /* SERVICE SECTION */
 .service-section{
-    background: linear-gradient(#17c2a354,#17c2a350), url("../img/services.jpg") no-repeat right bottom;
-    background-size: cover;
-  }
-  
-  .service-section .heading-text::after{
-    background-color: #14a58c;
-  }
-  
-  .grid{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-  }
-  
-  .our-work .crayon , .our-work .rocket{
-    margin-bottom: 2.5rem;
-  }
-  .our-work .flag , .our-work .gears{
-    margin-bottom: 3rem;
-  }
+  background: linear-gradient(#17c2a354,#17c2a350), url("../img/services.jpg") no-repeat right bottom;
+  background-size: cover;
+}
 
-  /* TEAM SECTION */
+.service-section .heading-text::after{
+  background-color: #14a58c;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+  .our-work .crayon , .our-work .rocket{
+  margin-bottom: 2.5rem;
+}
+.our-work .flag , .our-work .gears{
+  margin-bottom: 3rem;
+}
+
+/* TEAM SECTION */
 .team-section{
   background-color: #e7f1f8;
   background: linear-gradient(#7e96a7d0,#446379bb), url("../img/team.jpg") no-repeat;
@@ -228,7 +227,7 @@ background-color: #643a79;
 /* SKILL SECTION */
 
 .skill-section{
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/skill.jpg") no-repeat;
+background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/skill.jpg") no-repeat;
   background-size: cover;
 }
 .skill-section .heading-text{
@@ -260,18 +259,30 @@ svg.radial-progress circle {
   stroke-dashoffset: 219.91148575129; 
   stroke-width: 7;
 }
-svg.radial-progress circle.incomplete { opacity: 0.25; }
-svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+svg.radial-progress circle.incomplete { 
+  opacity: 0.25; 
+}
+svg.radial-progress circle.complete { 
+  stroke-dasharray: 219.91148575129; 
+}
 svg.radial-progress text {
   fill: #fff;
   text-anchor: middle;
 }
 
 /* 3. Apply your own color to the circle. */
-.html-css svg.radial-progress circle { stroke: #30bae7; }
-.web-design svg.radial-progress circle { stroke: #d74680; }
-.graphic-design svg.radial-progress circle { stroke: #15c7a8; }
-.ui-ux svg.radial-progress circle { stroke: #eb7d4b; }
+.html-css svg.radial-progress circle { 
+  stroke: #30bae7; 
+}
+.web-design svg.radial-progress circle { 
+  stroke: #d74680; 
+}
+.graphic-design svg.radial-progress circle { 
+  stroke: #15c7a8; 
+}
+.ui-ux svg.radial-progress circle { 
+  stroke: #eb7d4b; 
+}
 
 /* PORTFOLIO SECTION */
 
@@ -315,4 +326,225 @@ svg.radial-progress text {
 }
 .button-filter button:hover{
   box-shadow: inset 0 .3rem .5rem rgba(60,71,97,.5)
+}
+
+/* ABOUT SECTION */
+
+.about-section{
+  background-color: #d74680;
+  background: linear-gradient(#61e2e280,rgba(255, 166, 0, 0.486),rgba(147, 78, 78, 0.5))
+}
+.about-section .container{
+  text-align: left;
+}
+.about-section .heading-text{
+  text-align: center;
+}
+.about-section .template-text{
+  color: #fff;
+  margin-bottom: 0;
+}
+.about-section .heading-subtext{
+  text-align: center;
+}
+
+.about-section .grid-of-two-column{
+  grid-gap: 10rem;
+}
+
+.flex-image{
+  display: flex;
+  column-gap: 3rem;
+}
+
+.flex-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-text p{
+  margin-bottom: 1rem;
+}
+
+/* CONTACT SECTION */
+
+.contact-section{
+  background-color: #3c5499;
+  background: linear-gradient(rgba(86, 86, 236, 0.6),rgba(255, 99, 71, 0.6),rgba(148, 136, 70, 0.5));
+
+}
+.contact-section .btn{
+  background-color: #30bae7;
+}
+
+.contact-section .template-text{
+  margin-bottom: 0;
+}
+.contact-section .heading-subtext{
+  width: 70%;
+  margin-left: 15%;
+}
+.contact-section .heading-text::after{
+  background-color: #273a71;
+}
+.contact-section form::placeholder{
+  color: #fff;
+  opacity: 1;
+}
+.input-form{
+  display: flex;
+  column-gap: 3rem;
+  margin: 0 auto;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+.input-form input{
+  width: 100%;
+}
+#name,#email,#comment{
+  padding: 1.1rem;
+  background-color: #273a71;
+  border: 1px solid #273a71;
+  color: #fff;
+}
+
+textarea{
+  width: 70%;
+  height: 30rem;
+  margin: 0 auto;
+}
+
+/* FOOTER SECTION */
+
+.footer-section{
+  background-color: #344b8e;
+}
+.footer-section .container{
+  padding: 3rem 0;
+  margin: 0 10rem;
+  text-align: center;
+}
+.social-account-link{
+  display: flex;
+  column-gap: 3rem;
+  justify-content: center;
+}
+.social-account-link a{
+  color: #fff;
+  text-decoration: none;
+}
+.social-account-link a:hover{
+  color: #30bae7;
+}
+
+/* MEDIA QUERY CSS */
+
+@media only screen and (max-width: 992px) {
+.navigation-items{
+  display: none;
+  margin: 0 0;
+}
+.hamberger-menu{
+  display: block;
+}
+.navigation-items li{
+  margin-bottom: 10px;
+}
+.navigation-items li:last-child{
+  margin-bottom: 0px;
+}
+.grid{
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 5rem;
+}
+.service-section{
+  background-position: inherit;
+}
+.team-section,.skill-section{
+  background-position: center;
+}
+textarea {
+  height: 20rem;
+}
+}
+
+@media only screen and (max-width: 768px) {
+html{
+  font-size: 8px;
+}
+.about-section .grid-of-two-column {
+  grid-gap: 10rem 3rem;
+}
+.active{
+  padding: 10px;
+}
+.input-form{
+  display: flex;
+  column-gap: 0;
+  flex-direction: column;
+}
+.input-form input{
+  width: 100%;
+  margin: 1rem 0;
+}
+.flex-image{
+  column-gap: 0;
+  flex-direction: column;
+} 
+
+.flex-text{
+  text-align: center;
+}
+}
+
+@media only screen and (max-width: 575px) {
+html{
+  font-size: 6px;
+}
+.heading-text{
+  font-size: 2rem
+}
+.home-section .heading-text{
+  font-size: 3rem
+}
+.heading-subtext,.subtext{
+  font-size: 1.5rem;
+}
+.container{
+  padding: 8rem 0;
+  margin: 0 8rem;
+}
+.grid{
+  grid-template-columns: 1fr;
+  row-gap: 5rem;
+  }
+.grid-of-two-column {
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+}
+.input-form {
+  row-gap: 2rem;
+  grid-template-columns: 1fr;
+}
+.flex-text{
+  justify-content: center;
+}
+img{
+  width: 25%;
+  align-self: center;
+}
+.service-section img{
+  width: 10%;
+}
+svg.radial-progress {
+  max-width: 100px;
+}
+.button-filter{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 3rem;
+}
 }
